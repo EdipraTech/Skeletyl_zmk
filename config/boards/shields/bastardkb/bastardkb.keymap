@@ -38,12 +38,12 @@
             >;
         };
 
-        nav_layer {
+        num_layer {
             bindings = <
-    &none       &none       &none       &none       &none                           &kp LC(Y)   &kp LC(V)   &kp LC(C)   &kp LC(X)   &kp LC(Z)
-    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none                           &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT      &kp CAPS
-    &none       &none       &none       &none       &none                           &kp INS     &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
-                                        &none       &trans  &none       &kp RET     &kp BSPC    &kp DEL     
+    &kp LBRC    &kp F7      &kp F8      &kp F9     &kp RBRC                         &kp LBKT  &kp N7      &kp N8      &kp N9     &kp RBKT
+    &kp COLON   &kp F4      &kp F5      &kp F6     &kp PLUS                         &kp EQUAL &kp N4      &kp N5      &kp N6     &kp SEMI
+    &kp TILDE   &kp F1      &kp F2      &kp F3     &kp LALT                         &kp BSLH  &kp N1      &kp N2      &kp N3     &kp CAPS
+                                        &none      &none    &none             &none &trans    &kp N0     
             >;
         };
 
@@ -56,7 +56,7 @@
             >;
         };
 
-        num_layer {
+        nav_layer {
             bindings = <
     &kp LBKT    &kp N7  &kp N8  &kp N9  &kp RBKT                        &none   &none       &none       &none       &none
     &kp SQT     &kp N4  &kp N5  &kp N6  &kp EQUAL                       &none   &kp RSHFT   &kp RCTRL   &kp RALT    &kp RGUI
