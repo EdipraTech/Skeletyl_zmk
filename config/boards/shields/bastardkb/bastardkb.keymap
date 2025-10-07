@@ -3,9 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
-
 // The default keymap is roughly on Miryoku layout
 // (https://github.com/manna-harbour/miryoku).
 // Customize on your own on the config folder.
@@ -86,7 +83,7 @@
             bindings = <
 &kp PSCRN  &none     &kp UP    &none      &none            &none      &none       &none        &none   &none
 &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP        &kp PG_DN  &kp H       &kp J        &kp K   &kp L
-&none      &none     &none     &none      &kp HOME         &kp END    &mkp LCLK   &mkp RCLK    &none   &mkp MCLK
+&none      &none     &none     &none      &kp HOME         &kp END    &none       &none        &none   &none
                      &none     &trans     &none            &none      &none       &none
             >;
         };
