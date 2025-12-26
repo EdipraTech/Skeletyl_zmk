@@ -14,10 +14,11 @@
 // Layer definitions
 #define BASE    0
 #define ALT     1
-#define NUM     2
-#define SYM     3
-#define NAV     4
-#define MED     5
+#define COL     2
+#define NUM     3
+#define SYM     4
+#define NAV     5
+#define MED     6
 // -----------------
 
 / {
@@ -51,19 +52,28 @@
 
         default_layer {
             bindings = <
-    &kp Q       &kp W       &kp F       &kp P        &kp B                             &kp J           &kp L          &kp U       &kp Y           &kp SEMI
-    &ht LGUI A  &ht LALT R  &ht LCTRL S &ht LSHFT T  &kp G                             &kp M           &ht RSHFT N    &ht RCTRL E &ht RALT I      &ht RGUI O
-    &kp Z       &kp X       &kp C       &kp D        &kp V                             &kp K           &kp H          &kp COMMA   &kp DOT         &kp FSLH
-                                        &lt MED DEL  &lt NAV BSPC   &kp LALT   &kp TAB &lt NUM SPACE   &lt SYM RET
+    &kp Q       &kp W       &kp E       &kp R       &kp T                                    &kp Y       &kp U       &kp I       &kp O           &kp P
+    &ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F &kp G                                    &kp H       &ht RSHFT J &ht RCTRL K &ht RALT L      &ht LGUI SEMI
+    &kp Z       &kp X       &kp C       &kp V       &kp B                                    &kp N       &kp M       &kp COMMA   &kp DOT         &kp FSLH
+                                        &kp LALT    &lt MED DEL &lt NAV BSPC   &lt NUM SPACE &lt SYM RET &kp TAB 
             >;
         };
 
-    alt_layer {
+    alt_layer { // Modified inverted Gallium
              bindings = <
-    &kp Q       &kp W       &kp E       &kp R        &kp T                      &kp Y           &kp U       &kp I       &kp O           &kp P
-    &ht LGUI A  &ht LALT S  &ht LCTRL D &ht LSHFT F  &kp G                      &kp H           &ht RSHFT J &ht RCTRL K &ht RALT L      &ht LGUI SEMI
-    &kp Z       &kp X       &kp C       &kp V        &kp B                      &kp N           &kp M       &kp COMMA   &kp DOT         &kp FSLH
-                                        &lt MED DEL  &lt NAV BSPC   &kp LALT   &kp TAB &lt NUM SPACE   &lt SYM RET
+    &kp X       &kp M       &kp W       &kp G        &kp Q                                    &kp K       &kp F       &kp O       &kp U           &kp MINUS
+    &ht LGUI N  &ht LALT R  &ht LCTRL T &ht LSHFT S  &kp V                                    &kp P       &ht RSHFT H &ht RCTRL A &ht RALT E      &ht LGUI I
+    &kp B       &kp L       &kp D       &kp C        &kp J                                    &kp Z       &kp Y       &kp COMMA   &kp DOT         &kp SEMI
+                                    &kp LALT         &lt MED DEL &lt NAV BSPC   &lt NUM SPACE &lt SYM RET &kp TAB 
+            >;
+        };
+
+    col_layer {
+             bindings = <
+    &kp Q       &kp W       &kp F       &kp P       &kp B                                    &kp J       &kp L          &kp U       &kp Y           &kp SEMI
+    &ht LGUI A  &ht LALT R  &ht LCTRL S &ht LSHFT T &kp G                                    &kp M       &ht RSHFT N    &ht RCTRL E &ht RALT I      &ht RGUI O
+    &kp Z       &kp X       &kp C       &kp D       &kp V                                    &kp K       &kp H          &kp COMMA   &kp DOT         &kp FSLH
+                                        &kp LALT    &lt MED DEL &lt NAV BSPC   &lt NUM SPACE &lt SYM RET &kp TAB 
             >;
         };
 
